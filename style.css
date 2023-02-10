@@ -1,0 +1,159 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 5px;
+    font-weight: 400;
+    font-family: 'Noto Sans KR', '맑은 고딕', 'Malgun Gothic', Dotum, "돋움", Gulim, "굴림", Verdana, Tahoma, AppleGothic, sans-serif;
+    text-align: justify;
+    color: #888;
+    line-height: 1.75;
+    word-break: keep-all;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section>div {
+    margin: 10px;
+    padding: 10px;
+    min-width: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color:blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: dashed;
+}
+
+#first_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 500px;
+    background-image: url(http://www.realgain.co.kr/kor/images/main/main_v01.jpg);
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+#first_image p:first-child {
+    font-size: 2em;
+    color: white;
+    margin: 107px 0 0 49px;
+    font-weight: 900;
+    line-height: 1.3em;
+    padding: 0;
+    height: 100px;
+}
+
+#first_image p {
+    font-size: 1.1em;
+    color: white;
+    margin-left: 80px;
+    margin-top: 0;
+    padding: 0px;
+}
+
+#about-atom {
+    background-color: #f5f5f5;
+    background-size: contain;
+}
+
+#about-tech {
+    background-size: cover;
+    color: white;
+}
+
+#about-field {
+    color: #000;
+    border: 1px solid #999;
+    background-size: contain;
+}
+
+#about-product {
+    background-size: cover;
+    color: white;
+}
+
+#product {
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 20px;
+    margin: 30px 0px 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#product>div {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 250px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+#product>div>div {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 200px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+#product>div>div:nth-child(odd) {
+    background-color: #eee;
+}
+#product>div>div:nth-child(even) {
+    border: 1px solid #ddd;
+}
+
+#product>div>div p:first-child {
+    height: auto;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+#product>div>div p {
+    width: 500px;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    height: 7em;
+}

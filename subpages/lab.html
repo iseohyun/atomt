@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Atom</title>
+  <link rel="shortcut icon" href="atom.png" type="image/x-icon">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <!-- 상단 메뉴 스크롤 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="../modules/scroll.js"></script>
+
+  <!-- footer/header 분리 -->
+  <script src="../modules/includeHTML.js"></script>
+  <style>
+    @import url("../style.css");
+  </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <header include-html="../header.html"></header>
+  <article style="padding-top: 80px;">
+    <section>
+        <p>회사의 인력구성을 작성합니다.</p>
+    </section>
+  </article>
+  <footer include-html="../footer.html"></footer>
+</body>
+<script>includeHTML();</script>
+
+</html>

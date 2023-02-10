@@ -1,7 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head></head>
-<body>
-atomt 홈페이지 제작중
+<html lang="ko">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Atom</title>
+  <link rel="shortcut icon" href="atom.png" type="image/x-icon">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <meta property="og:title" content="Atom">
+  <meta name="keywords" content="Atom, 원자력, 제어계측">
+  <meta name="description" content="원자력 발전소의 계측·제어·통신 분야 설비 및 장비의 국산화">
+  <meta property="og:description" content="원자력 발전소의 계측·제어·통신 분야 설비 및 장비의 국산화">
+
+  <style>
+    @import url("style.css");
+  </style>
+
+  <!-- 상단 메뉴 스크롤 -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="modules/scroll.js"></script>
+
+  <!-- footer/header 분리 -->
+  <script src="modules/includeHTML.js"></script>
+
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <header include-html="header.html"></header>
+  <article>
+    <section id="first_image">
+      <p>Find Your Limits<br>Go Beyond</p>
+      <p>We want to express a hearty welcome to you!</p>
+    </section>
+    <section>
+      <div id="about-atom" style="background-image:url('http://www.realgain.co.kr/kor/images/main/sec01_bg01.jpg');">
+        <strong>Atom</strong>
+        <p>신뢰의 10년, 100년 기업으로 거듭나겠습니다</p>
+        <a href="atomt.co.kr/company/company.php">자세히 보기</a>
+      </div>
+      <div id="about-tech" style="background-image:url('http://www.realgain.co.kr/kor/images/main/sec01_bg02.jpg');">
+        <strong>기술</strong>
+        <p>연구소와 연구분야에 대해 소개합니다</p>
+        <a href="atomt.co.kr/technology/intro.php">자세히 보기</a>
+      </div>
+    </section>
+    <section>
+      <div id="about-field" style="background-image:url('http://www.realgain.co.kr/kor/images/main/sec01_bg04.jpg');">
+        <strong>사업영역</strong>
+        <p><span style="background-color: antiquewhite;">제어계측 및 IT기반기술을 활용하여 계측, 제어, <br>통신분야의 <br>발전소 설비 및 장비를
+            개발합니다</span></p>
+        <a href="atomt.co.kr/company/business.php">자세히 보기</a>
+      </div>
+      <div id="about-product" style="background-image:url('http://www.realgain.co.kr/kor/images/main/sec01_bg05.jpg');">
+        <strong>제품소개</strong>
+        <p>최고의 기술력으로 고객만족을 위하여 최선을 다합니다</p>
+        <a href="atomt.co.kr/product/index.php">자세히 보기</a>
+      </div>
+    </section>
+    <section id="product">
+      <strong>Products</strong>
+      <div>
+        <div>
+          <a href="atomt.co.kr/product/view.php?idx=24&amp;p1=25&amp;p2=32">
+            <p>광 격리카드(Advanced Opto-Isolator 카드)</p>
+            <p>•국산화 개발- 기존 외산 제품의 발열에 의한 회로소손 보완 및 신뢰성 개선 •주요 개선점- PCB 소자 열화방지를 위한 이격 설계- PCB pattern 개선 통한 노이즈 및 신뢰성 개선- Conformal Coating 및 4-Layer PCB 제작을 통한 이물질에 의한 절연파괴 예방* 제품 기술규격 및 원자력 발전소 기술규격 요건 및 시험 요건 충족적용 사례• 한빛 원자력발전소(한빛 3·4·5·6호기)• 고리 원자력발전소(신고리 1·2·3·4호기)• 한울 원자력발전소(한울 3·4·5·6호기)• 월성 원자력발전소(신월성 1·2호기)</p>
+            <p>2022. 01. 11</p>
+          </a>
+        </div>
+        <div>
+          <a href="http://www.realgain.co.kr/kor/product/view.php?idx=22&amp;p1=25&amp;p2=31">
+            <p class="tit">코일전류 감시센서(ACTM Sensor)</p>
+            <p class="txt">•Westinghouse Type- 입력 vs 출력 오차로 인한 시스템 경보 유발• Realgain- 현장 최적화 설계 및 정밀 튜닝을 통한 출력 정밀도 향상 (고객 시스템 운영 안정화/기존 WEC로 역수출하는 품목)적용 사례• 한빛 원자력발전소(한빛 3·4·5·6호기)•고리 원자력발전소(신고리 1·2호기)• 한울 원자력발전소(한울 3·4·5·6호기)•월성 원자력발전소(신월성 1·2호기)</p>
+            <p class="date">2022. 01. 11</p>
+            <span class="plus"></span>
+          </a>
+        </div>
+        <div>
+          <a href="http://www.realgain.co.kr/kor/product/view.php?idx=20&amp;p1=25&amp;p2=30">
+            <p class="tit">디지털 제어봉 위치지시(DRPI) 시스템</p>
+            <p class="txt">• 기존 설비의 국산화• VME 시스템 기반으로 설비를 구성하여 신뢰성 향상• 안정성이 검증된 상용화 하드웨어 시스템을 적용하여 유지보수의 효율성 향상• 신뢰성이 높은 표준화 통신방식(RS-422) 활용• 이중화 시스템으로 구성, 한쪽의 고장 발생시에도 제어봉 위치 정보 표시에 지장이 없도록 설계적용 사례• 한빛 원자력발전소(한빛 1·2호기)• 고리 원자력발전소(고리 3·4호기)</p>
+            <p class="date">2022. 01. 11</p>
+            <span class="plus"></span>
+          </a>
+      </div>
+    </section>
+  </article>
+  <footer include-html="footer.html"></footer>
 </body>
+<script>includeHTML();</script>
+
 </html>
