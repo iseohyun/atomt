@@ -15,21 +15,37 @@
   <script src="../modules/scroll.js"></script>
 
   <!-- footer/header 분리 -->
-  <script src="../modules/includeHTML.js"></script>
+  <script>
+    var header = "../header.html";
+    var footer = "../footer.html";
+    $(document).ready(function () {
+      $("header").load(header, function () {
+        $("header>ul>li").on("mouseenter", function () {
+          // Hide all other uls.
+          $("header").find("li").find("ul").css("visibility", "hidden");
+          // Show my ul.
+          $(this).find("ul").css("visibility", "visible");
+        });
+        $("header").on("mouseleave", function () {
+          $("header").find("li").find("ul").css("visibility", "hidden");
+        })
+      });
+      $("footer").load(footer);
+    });
+  </script>
   <style>
     @import url("../style.css");
   </style>
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-  <header include-html="../header.html"></header>
+  <header></header>
   <article style="padding-top: 80px;">
     <section>
-        <p>회사의 연구성과를 작성합니다.</p>
+      <p>회사의 연구성과를 작성합니다.</p>
     </section>
   </article>
-  <footer include-html="../footer.html"></footer>
+  <footer></footer>
 </body>
-<script>includeHTML();</script>
 
 </html>

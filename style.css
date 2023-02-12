@@ -7,6 +7,118 @@ body {
     justify-content: space-between;
 }
 
+header {
+    width: 100%;
+    font-size: clamp(0.8rem, 5vw, 1.5rem);
+    font-weight: bold;
+    color: #555;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 0 0 5px 0;
+    transition: all .3s;
+    background-color: #fffE;
+    box-shadow: 0 10px 10px -10px rgb(0 0 0 / 50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+header a,
+header a:active,
+header a:focus,
+header a:visited,
+header a:hover {
+    color: #555;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header>ul>li {
+    float: left;
+    margin: 0 auto;
+    padding: 0.7em 1em;
+}
+
+header ul>li {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    position: relative;
+}
+
+header ul>li:hover:before,
+header ul>li:focus:before,
+header ul>li:active:before {
+    left: 0;
+    right: 0;
+}
+
+header ul>li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #cf265e;
+    height: 3px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+header a {
+    color: #888;
+    color: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: bold;
+}
+
+header li:hover>ul {
+    visibility: visible;
+}
+
+header li>ul {
+    visibility: hidden;
+    position: absolute;
+    width: max-content;
+    background-color: #fffE;
+    display: grid;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    top: 55px;
+    /* left: -50%; */
+    justify-items: center;
+    box-shadow: 7x 7px 7px -7px rgb(0 0 0 / 50%);
+}
+
+header li>ul>li {
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #888;
+    padding: 10px;
+}
+
+header li>ul>li::before {
+    background: rgb(0, 0, 158);
+}
+
 article {
     display: flex;
     flex-direction: column;
@@ -44,7 +156,7 @@ section>div {
 a,
 a:visited {
     text-decoration: none;
-    color:blue;
+    color: blue;
 }
 
 a:hover {
@@ -139,9 +251,11 @@ a:hover {
     font-size: 0.8rem;
     border-radius: 10px;
 }
+
 #product>div>div:nth-child(odd) {
     background-color: #eee;
 }
+
 #product>div>div:nth-child(even) {
     border: 1px solid #ddd;
 }
